@@ -1,0 +1,308 @@
+@font-face {
+  font-family: hg-bold;
+  src: url(fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: hg-extrabold;
+  src: url(fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: hg-medium;
+  src: url(fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+@font-face {
+  font-family: hg-variable;
+  src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+html {
+  background-color: white;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    display: grid;
+    place-content: center;
+    position: sticky;
+    padding: 0px;
+    margin-top: 0px;
+    height: 50vh;
+    max-height: 1000px;
+    width: 390px;
+    max-width: 768px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+/* CARD */
+.container {
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  color: rgb(27, 25, 61);
+  width: 732px;
+  height: 513px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 50px 0px rgba(4, 0, 255, 0.336);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    position: relative;
+    margin: auto;
+    margin-left: 0px;
+    color: rgb(27, 25, 61);
+    width: auto;
+    min-width: 390px;
+    max-width: 768px;
+    height: auto;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+/* LEFT PART OF THE CARD */
+.left {
+  text-align: center;
+  background-image: linear-gradient(to top, #2e2be9, #7857ff);
+  border-radius: 30px;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 370px;
+  height: auto;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .left {
+    text-align: center;
+    margin-top: -80px;
+    background-image: linear-gradient(to top, #2e2be9, #7857ff);
+    border-radius: 30px;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: 550px;
+  }
+}
+
+.left-top-text {
+  letter-spacing: 0px;
+  margin-top: 35px;
+  font-family: hg-medium;
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.671);
+}
+
+/* CIRCLE */
+.circle {
+  display: grid;
+  place-content: center;
+  margin-left: 90px;
+  margin-top: 40px;
+  background-image: linear-gradient(to bottom, #4e21caaf, #2848d8b7);
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+}
+
+.circlescore {
+  margin-top: 5px;
+  font-family: hg-extrabold;
+  font-size: 70px;
+  color: white;
+}
+
+.circlescoremax {
+  font-family: hg-medium;
+  margin-top: -95px;
+  color: rgba(255, 255, 255, 0.432);
+}
+
+/* THE AUTOMATIC BOLD TEXT UNDER THE CIRCLE */
+.left-undercircle-text {
+  font-family: hg-bold;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.849);
+  margin-top: 20px;
+}
+
+/* BOTTOM FORMATTING FOR THE AUTOMATIC TEXT */
+.bottomautotext {
+  font-family: hg-medium;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.699);
+  margin: auto;
+  width: 230px;
+}
+
+/* RIGHT SIDE OF THE CARD */
+.right {
+  margin-left: 30px;
+  margin-top: 15px;
+  line-height: 50px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .right {
+    margin-left: 30px;
+    margin-top: -10px;
+    line-height: 40px;
+  }
+}
+
+/* TOP SUMMARY TEXT FORMAT */
+.summarytext {
+  font-family: hg-bold;
+  color: hsl(224, 30%, 27%);
+  font-size: 19px;
+}
+
+/* RESULTS CONTAINER */
+.results {
+  margin-left: 15px;
+  font-family: hg-medium;
+  font-size: 18px;
+  width: auto;
+  max-width: 300px;
+}
+
+.resultssmallcontainer1 {
+  width: 280px;
+  border-radius: 6px;
+  padding-left: 15px;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.resultssmallcontainer2 {
+  width: 280px;
+  border-radius: 6px;
+  padding-left: 15px;
+  background-color: rgba(255, 166, 0, 0.1);
+}
+
+.resultssmallcontainer3 {
+  width: 280px;
+  border-radius: 6px;
+  padding-left: 15px;
+  background-color: rgba(0, 189, 142, 0.1);
+}
+
+.resultssmallcontainer4 {
+  width: 280px;
+  border-radius: 6px;
+  padding-left: 15px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* BUTTON */
+.btn {
+  font-family: hg-medium;
+  font-size: 18px;
+  color: rgb(231, 231, 231);
+  background-color: hsl(224, 30%, 27%);
+  margin-top: 20px;
+  border-style: none;
+  border-radius: 50px;
+  width: 300px;
+  max-width: 300px;
+  height: 55px;
+  max-height: 55px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .btn {
+    font-family: hg-medium;
+    font-size: 18px;
+    color: rgb(231, 231, 231);
+    background-color: hsl(224, 30%, 27%);
+    margin-top: 10px;
+    margin-left: 15px;
+    border-style: none;
+    border-radius: 50px;
+    width: 300px;
+    max-width: 300px;
+    height: 55px;
+    max-height: 55px;
+  }
+}
+
+button:hover {
+  background-image: linear-gradient(to top, #2e2be9, #7857ff);
+}
+
+/* RESULTS START */
+
+/* RESULT IMAGES */
+
+.result1image {
+  content: url(images/icon-reaction.svg);
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.result2image {
+  content: url(images/icon-memory.svg);
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.result3image {
+  content: url(images/icon-verbal.svg);
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.result4image {
+  content: url(images/icon-visual.svg);
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* RESULTS FORMATTING */
+#result1text {
+  color: red;
+  margin-right: 40%;
+}
+
+#result2text {
+  color: orange;
+  margin-right: 41%;
+}
+
+#result3text {
+  color: rgb(0, 189, 142);
+  margin-right: 46%;
+}
+
+#result4text {
+  color: blue;
+  margin-right: 48%;
+}
+
+.resultscore {
+  color: hsl(224, 30%, 27%);
+}
+
+/* /100 AFTER RESULTS FORMATTING */
+.resultOfHundred {
+  color: hsla(224, 30%, 27%, 0.486);
+}
+
+/* RESULTS END */

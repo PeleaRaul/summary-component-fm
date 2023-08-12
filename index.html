@@ -15,10 +15,66 @@
   </head>
   <body>
     <div class="container">
-      <div class="left">ddd</div>
-      <div class="right">ddd</div>
+      <div class="left">
+        <div class="left-top-text">
+          <p class="text">Your Result</p>
+        </div>
+        <div class="circle">
+          <div class="circlescore">
+            <p id="score"></p>
+          </div>
+          <div class="circlescoremax">
+            <p>of 100</p>
+          </div>
+        </div>
+        <div class="left-undercircle-text">
+          <div id="automatictext"></div>
+        </div>
+        <div class="bottomautotext">
+          <p id="bottomautotext">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="summarytext">
+          <p class="text">Summary</p>
+        </div>
+        <div class="results" id="results">
+          <div class="resultssmallcontainer1">
+            <p>
+              <span class="result1image"></span><span id="result1text"></span
+              ><span class="resultscore" id="result1score"></span
+              ><span class="resultOfHundred">/100</span>
+            </p>
+          </div>
+          <div class="resultssmallcontainer2">
+            <p>
+              <span class="result2image"></span><span id="result2text"></span
+              ><span class="resultscore" id="result2score"></span
+              ><span class="resultOfHundred">/100</span>
+            </p>
+          </div>
+          <div class="resultssmallcontainer3">
+            <p>
+              <span class="result3image"></span><span id="result3text"></span
+              ><span class="resultscore" id="result3score"></span
+              ><span class="resultOfHundred">/100</span>
+            </p>
+          </div>
+          <div class="resultssmallcontainer4">
+            <p>
+              <span class="result4image"></span><span id="result4text"></span
+              ><span class="resultscore" id="result4score"></span
+              ><span class="resultOfHundred">/100</span>
+            </p>
+          </div>
+        </div>
+        <button class="btn" id="button">Continue</button>
+      </div>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/script.js"></script>
+  <script type="module" src="assets/module.js"></script>
 </html>
