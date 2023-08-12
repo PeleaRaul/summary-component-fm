@@ -79,6 +79,10 @@ body {
 }
 
 /* LEFT PART OF THE CARD */
+
+.h1 {
+font-size: 14px;
+}
 .left {
   text-align: center;
   background-image: linear-gradient(to top, #2e2be9, #7857ff);
