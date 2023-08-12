@@ -80,8 +80,8 @@ body {
 
 /* LEFT PART OF THE CARD */
 
-.h1 {
-font-size: 12px;
+h1 {
+  font-size: 23px;
 }
 .left {
   text-align: center;
